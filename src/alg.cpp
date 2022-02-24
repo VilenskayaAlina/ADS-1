@@ -10,13 +10,16 @@ bool checkPrime(uint64_t value) {
           if (value % i == 0)
               ++del;
       }
-      if (del == 2)
+      if (del == 2) {
           return true;
-      else
+      }
+      else {
           return false;
+      }
   }
-  else
+  else {
       return false;
+  }
 }
 
 uint64_t nPrime(uint64_t n) {
@@ -43,8 +46,9 @@ uint64_t sumPrime(uint64_t hbound) {
   uint64_t sum = 0;
   uint64_t i = 0;
   for (i; hbound > i; i++) {
-      if (checkPrime(i))
-          sum = sum + i;
+    if (checkPrime(i)) {
+        sum = sum + i;
+    }
   }
   return sum;
 }
