@@ -33,9 +33,8 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
   for (++value; true; value++) {
-    if (checkPrime(value)) {
+    if (checkPrime(value))
       return value;
-    }
   }
 }
 
